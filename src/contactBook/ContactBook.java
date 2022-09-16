@@ -80,6 +80,16 @@ public class ContactBook {
         contacts = tmp;
     }
 
+    public String findName(int phoneNumber) {
+        String name = "";
+        for (int i = 0; i < counter; i++) {
+            if (name == "" && contacts[i].getPhone() == phoneNumber) {
+                name = contacts[i].getName();
+            }
+        }
+            return name;
+    }
+
     public void initializeIterator() {
         currentContact = 0;
     }
