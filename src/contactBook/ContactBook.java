@@ -90,6 +90,10 @@ public class ContactBook {
             return name;
     }
 
+    public boolean equalPhones() {
+        return true;
+    }
+
     public void initializeIterator() {
         currentContact = 0;
     }
