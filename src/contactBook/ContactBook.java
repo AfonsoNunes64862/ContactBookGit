@@ -91,7 +91,13 @@ public class ContactBook {
     }
 
     public boolean equalPhones() {
-        return true;
+        for(int i = 0; i<counter - 1; i++) {
+            for (int j = i + 1; j < counter; j++) {
+                if (contacts[i].getPhone() == contacts[j].getPhone())
+                    return true;
+            }
+        }
+        return false;
     }
 
     public void initializeIterator() {
